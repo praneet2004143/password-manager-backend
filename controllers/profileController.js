@@ -17,7 +17,7 @@ const uploadProfilePicture = async (req, res) => {
       });
     }
 
-    const imageUrl = `http://localhost:5000/uploads/${req.file.filename}`;
+    const imageUrl = `http://password-manager-backend-2-9lrd.onrender.com/uploads/${req.file.filename}`;
 
     console.log("Image URL:", imageUrl);
 

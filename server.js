@@ -31,7 +31,15 @@ console.log("CURRENT DIRECTORY:", __dirname);
 // Middleware
 // ==============================
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://password-app-topaz.vercel.app",
+    ],
+    credentials: true,
+  })
+);
 
 app.use(express.json());
 
